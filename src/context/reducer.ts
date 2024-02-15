@@ -242,6 +242,7 @@ export const gameReducer = (state: State, { type, payload }: Actions) => {
         resetWindows: payload,
       };
     default: {
+      const type = 'UNKNOWN';
       throw new Error(`The action ${type} isn't supported`);
     }
   }
